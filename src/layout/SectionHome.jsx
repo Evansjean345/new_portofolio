@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SectionHome() {
   return (
-    <>
+    <div className="bg-white">
       <div className="w-full px-6">
         <div className="mt-8 bg-indigo-700 relative rounded-lg border border-indigo-700 container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64">
           <img
@@ -34,6 +34,6 @@ export default function SectionHome() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

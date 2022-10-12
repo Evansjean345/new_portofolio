@@ -3,7 +3,7 @@ import ImgOne from "../images/ImgOne.png";
 
 export default function Phone() {
   return (
-    <>
+    <div className="bg-white">
       <div
         data-aos="flip-left"
         data-aos-duration="2000"
@@ -16,6 +16,6 @@ export default function Phone() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }

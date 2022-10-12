@@ -29,7 +29,7 @@ AOS.init({
 
 function App() {
   return (
-    <div className="App h-[100vh] w-full" >
+    <div className="App h-[100vh] w-full bg-white" >
       <Routes>
         <Route path="/" element={<Home />} />
       </Routes>

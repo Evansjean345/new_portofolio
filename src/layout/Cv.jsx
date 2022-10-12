@@ -2,10 +2,11 @@ import React from "react";
 import imgOne from "../images/ee.jpeg";
 import WorkOne from "../images/workOne.jpeg";
 import okk from "../images/okk.jpeg";
+import cvOne from "../images/cvPortofolio.png"
 
 export default function Cv() {
   return (
-    <>
+    <div className="bg-white">
       <h1 className="text-4xl lg:text-5xl text-center f-m-w text-indigo-700 underline underline-offset-8 font-bold pt-0">
         Expérience professionnelle
       </h1>
@@ -168,11 +169,28 @@ export default function Cv() {
           </div>
         </div>
         <div className="flex  items-center justify-center my-16 w-full">
-          <button className="hover:bg-gray-200   border-indigo-700 border-2 lg:text-2xl md:text-lg text-sm rounded f-m-m font-bold text-indigo-700 focus:outline-none lg:px-12 px-6 lg:py-6 py-3 xl:leading-4">
-            consulter le cv
-          </button>
+          <label htmlFor="my-modal-3" className="btn modal-button bg-white px-12 h-16 text-indigo-700 border-2 border-indigo-700 hover:bg-gray-100 hover:border-indigo-700">
+            consulter cv
+          </label>
+
+          <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+          <div className="modal">
+            <div className="modal-box relative h-full w-full">
+              <label
+                htmlFor="my-modal-3"
+                className="btn btn-sm btn-circle absolute right-2 top-2"
+              >
+                ✕
+              </label>
+            <img 
+              src={cvOne}
+              alt=""
+              className="w-full h-full"
+            />
+            </div>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
