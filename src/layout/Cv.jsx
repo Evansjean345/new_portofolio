@@ -2,7 +2,7 @@ import React from "react";
 import imgOne from "../images/ee.jpeg";
 import WorkOne from "../images/workOne.jpeg";
 import okk from "../images/okk.jpeg";
-import cvOne from "../images/cvPortofolio.png"
+import cvOne from "../images/cvOne.jpg";
 
 export default function Cv() {
   return (
@@ -169,24 +169,26 @@ export default function Cv() {
           </div>
         </div>
         <div className="flex  items-center justify-center my-16 w-full">
-          <label htmlFor="my-modal-3" className="btn modal-button bg-white px-12 h-16 text-indigo-700 border-2 border-indigo-700 hover:bg-gray-100 hover:border-indigo-700">
+          <label htmlFor="my-modal-5" className="btn modal-button bg-white px-12 h-16 text-indigo-700 border-2 border-indigo-700 hover:bg-gray-100 hover:border-indigo-700">
             consulter cv
           </label>
 
-          <input type="checkbox" id="my-modal-3" className="modal-toggle" />
+          <input
+            type="checkbox"
+            id="my-modal-5"
+            className="modal-toggle "
+          />
           <div className="modal">
-            <div className="modal-box relative h-full w-full">
-              <label
-                htmlFor="my-modal-3"
-                className="btn btn-sm btn-circle absolute right-2 top-2"
-              >
-                ✕
-              </label>
-            <img 
-              src={cvOne}
-              alt=""
-              className="w-full h-full"
-            />
+            <div className="modal-box w-[94%] lg:w-full h-[62%]  lg:h-[85%]">
+            <label htmlFor="my-modal-5" className="btn bg-[#33b5a1b9] text-white btn-sm btn-circle absolute right-2 top-2">✕</label>
+              <img  
+                src={cvOne}
+                alt=""
+                className="w-full h-full"
+              />
+              <div className="modal-action">
+                
+              </div>
             </div>
           </div>
         </div>

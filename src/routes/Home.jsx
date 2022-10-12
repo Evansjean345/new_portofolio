@@ -19,7 +19,7 @@ export default function Home() {
     });
   };
   return (
-    <>
+    <div className="bg-white">
       <NavLink className="pt-2 w-full fixed z-50 bg-white">
         <div className="container mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center" aria-label="Home" role="img">
@@ -103,7 +103,7 @@ export default function Home() {
       <br />
       <br />
       <br />
-      <div className="py-12  overflow-y-hidden">
+      <div className="py-12  overflow-y-hidden bg-white">
         {/* Code block starts */}
         <dh-component>
           {/*Hero Content Start */}
@@ -129,6 +129,6 @@ export default function Home() {
         {/* Code block ends */}
       </div>
       
-    </>
+    </div>
   );
 }
